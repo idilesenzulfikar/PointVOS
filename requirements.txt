@@ -1,0 +1,11 @@
+Pillow-SIMD
+progressbar2
+opencv-python
+gitpython
+gdown
+git+https://github.com/cheind/py-thin-plate-spline
+protobuf==3.13.0
+tensorboard
+pycocotools
+scikit-image
+pandas
