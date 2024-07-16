@@ -21,6 +21,33 @@ Official data release and code for ["Point-VOS: Pointing Up Video Object Segment
 - [ ] Release of the dataset scripts.
 - [ ] Release of the training code.
 
+## Environment Setup
+**Dependencies**
+- Python 3.8.0
+- CUDA 11.3
+- GCC 10.0.0
+- CUDNN 8.5.0
+- Pytorch 1.8.0
+- torchvision 0.9.0
+
+1. Create a conda environment with Python 3.8
+```shell 
+conda create --name pointvos python=3.8
+conda activate  pointvos
+```
+2. Install PyTorch v1.8.0. We developed the code base on a workstation with an RTX3090 GPU and CUDA v11.2
+```shell 
+conda install pytorch==1.8.0 torchvision==0.9.0 torchaudio==0.8.0 cudatoolkit=11.1 -c pytorch -c conda-forge
+```
+3. Install other dependencies from pip
+```shell 
+pip install -r requirements.txt
+```
+4. Add the PointVOS repo to PYTHONATH. The following command should be run from the repository base dir
+```shell 
+export PYTHONPATH="${pwdPYTHONPATH}:${pwd}"
+```
+
 ## Point-VOS Oops and Point-VOS Kinetics Datasets
 Please download the full set of Point-VOS Oops and Point-VOS Kinetics Annotations:
 
