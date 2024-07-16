@@ -28,7 +28,24 @@ Please download the full set of Point-VOS Oops and Point-VOS Kinetics Annotation
 
 🚀[Point-VOS Kinetics](https://omnomnom.vision.rwth-aachen.de/data/PointVOS/annotations/Kinetics/)
 
-In these folders, we provide the following:
+The annotations are in `JSON` or `JSONL` format. We provide the annotations of `Point-VOS Oops` and `Point-VOS Kinetics` datasets separately. `Point-VOS Oops` consists of the train and val splits, and `Point-VOS Kinetics` only the train split.
+
+In addition to the annotation files, we also share the extracted annotations and JPEG images. However, these files are quite large, so it takes some time to download them.
+
+Example format of the annotations: 
+```shell
+question_hash: String. A unique string identifier of the question, e.g. "69e69b3a8b29d92dd94be66c79f82d69"
+question: String. Processed question used to decide the single-foreground object, e.g.  "Who throws the egg at the man?".
+object_name: String. Processed answer indicates the single-foreground object, e.g. "baby girl".
+video_name: String. The name of the video this point annotation belongs to, e.g. "train/False Start! - Best Fails of the Week! (May 2018) _ FailArmy31" 
+annotated_points: List of dictionaries. Each dictionary has one point annotation with the following items:	
+	x: Integer. The x coordinate of the point annotation.
+	y: Integer. The y coordinate of the point annotation. 
+	frame_id: String. The frame of the video where the given point annotation is presented. 
+	status: String. The status of the point annotation. There are three statuses for each point annotation that are 'ACCEPTED', 'REJECTED', and 'AMBIGUOUS'. 'ACCEPTED' indicates the point annotation is accepted by the annotator for being a foreground point. 'REJECTED' indicates the point annotation is rejected by the annotator for being a foreground point and it is annotated as a background point. 'AMBIGUOUS' indicates the point annotation is ambiguous for the annotator that could not be decided for either being a foreground or a background point. The point annotations with 'AMBIGUOUS' status are not included in the final annotations of the PointVOS benchmark, they are presented in the annotation file for statistical purposes.
+	'is_fg_candidate': Bool. The flag indicates the point annotation is generated as a foreground point by the semi-automatic annotation tool. 
+```
+**Note: ** The videos are sparsely annotated, i.e. not all frames in the videos are annotated. Only 10 frames are annotated for each video in the dataset.
 
 ## Citation
 ```
