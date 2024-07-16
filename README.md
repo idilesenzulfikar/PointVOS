@@ -24,9 +24,9 @@ Official data release and code for ["Point-VOS: Pointing Up Video Object Segment
 ## Point-VOS Oops and Point-VOS Kinetics Datasets
 Please download the full set of Point-VOS Oops and Point-VOS Kinetics Annotations:
 
-:dart: [Point-VOS Oops]()    
+:dart: [Point-VOS Oops](https://omnomnom.vision.rwth-aachen.de/data/PointVOS/annotations/Oops/)    
 
-🚀[Point-VOS Kinetics]()
+🚀[Point-VOS Kinetics](https://omnomnom.vision.rwth-aachen.de/data/PointVOS/annotations/Kinetics/)
 
 In these folders, we provide the following:
 
