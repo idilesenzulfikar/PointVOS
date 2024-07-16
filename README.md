@@ -28,14 +28,14 @@ Official data release and code for ["Point-VOS: Pointing Up Video Object Segment
 - GCC 10.0.0
 - CUDNN 8.5.0
 - Pytorch 1.8.0
-- torchvision 0.9.0
+- Torchvision 0.9.0
 
 1. Create a conda environment with Python 3.8
 ```shell 
 conda create --name pointvos python=3.8
 conda activate  pointvos
 ```
-2. Install PyTorch v1.8.0. We developed the code base on a workstation with an RTX3090 GPU and CUDA v11.2
+2. Install PyTorch v1.8.0
 ```shell 
 conda install pytorch==1.8.0 torchvision==0.9.0 torchaudio==0.8.0 cudatoolkit=11.1 -c pytorch -c conda-forge
 ```
@@ -43,7 +43,7 @@ conda install pytorch==1.8.0 torchvision==0.9.0 torchaudio==0.8.0 cudatoolkit=11
 ```shell 
 pip install -r requirements.txt
 ```
-4. Add the PointVOS repo to PYTHONATH. The following command should be run from the repository base dir
+4. Add the PointVOS repo to `PYTHONATH`. The following command should be run from the repository base dir
 ```shell 
 export PYTHONPATH="${pwdPYTHONPATH}:${pwd}"
 ```
