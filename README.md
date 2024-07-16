@@ -45,7 +45,7 @@ annotated_points: List of dictionaries. Each dictionary has one point annotation
 	status: String. The status of the point annotation. There are three statuses for each point annotation that are 'ACCEPTED', 'REJECTED', and 'AMBIGUOUS'. 'ACCEPTED' indicates the point annotation is accepted by the annotator for being a foreground point. 'REJECTED' indicates the point annotation is rejected by the annotator for being a foreground point and it is annotated as a background point. 'AMBIGUOUS' indicates the point annotation is ambiguous for the annotator that could not be decided for either being a foreground or a background point. The point annotations with 'AMBIGUOUS' status are not included in the final annotations of the PointVOS benchmark, they are presented in the annotation file for statistical purposes.
 	'is_fg_candidate': Bool. The flag indicates the point annotation is generated as a foreground point by the semi-automatic annotation tool. 
 ```
-**Note: ** The videos are sparsely annotated, i.e. not all frames in the videos are annotated. Only 10 frames are annotated for each video in the dataset.
+**Note:** The videos are sparsely annotated, i.e. not all frames in the videos are annotated. Only 10 frames are annotated for each video in the dataset.
 
 ## Citation
 ```
