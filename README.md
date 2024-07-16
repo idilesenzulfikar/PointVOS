@@ -13,5 +13,29 @@ Official data release and code for ["Point-VOS: Pointing Up Video Object Segment
   <img src="assets/teaser/oops/3c2f8b46c4ae5794161da1759cd61d91.gif" alt="teaser_6" width="270px" height="180px"/>
 </div>
 
+## Updates
+**16.07.2024:** Initially, we are uploading the annotations of the datasets. 
 
+**TODOs:**
+- [x] Release of the datasets.
+- [ ] Release of the dataset scripts.
+- [ ] Release of the training code.
 
+## Point-VOS Oops and Point-VOS Kinetics Datasets
+Please download the full set of Point-VOS Oops and Point-VOS Kinetics Annotations:
+
+:dart: [Point-VOS Oops]()    
+
+🚀[Point-VOS Kinetics]()
+
+In these folders, we provide the following:
+
+## Citation
+```
+@inproceedings{zulfikar2024point,
+  title={Point-VOS: Pointing Up Video Object Segmentation},
+  author={Zulfikar, Idil Esen and Mahadevan, Sabarinath and Voigtlaender, Paul and Leibe, Bastian},
+  journal={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  year={2024}
+}
+```
