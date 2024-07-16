@@ -1,5 +1,5 @@
 # PointVOS
-Official data release and code for ["Point-VOS: Pointing Up Video Object Segmentation"](https://pointvos.github.io/), [CVPR 2024](cvpr2023.thecvf.com)
+Official data release and code for ["Point-VOS: Pointing Up Video Object Segmentation"](https://pointvos.github.io/), **CVPR 2024**
 
 <div align="left">
   <img src="assets/teaser/kinetics/0bc07337743ba8a989eb940729daa1bc.gif" alt="teaser_1" width="270px" height="180px"/>  
