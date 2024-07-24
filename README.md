@@ -45,7 +45,7 @@ pip install -r requirements.txt
 ```
 4. Add the PointVOS repo to `PYTHONATH`. The following command should be run from the repository base dir
 ```shell 
-export PYTHONPATH="${pwdPYTHONPATH}:${pwd}"
+export PYTHONPATH="${PYTHONPATH}:${pwd}"
 ```
 
 ## Point-VOS Oops and Point-VOS Kinetics Datasets
