@@ -138,9 +138,12 @@ def visualize_video_point_annotations(frames_dir: str, annotations_dir: str, vis
         inst_range = np.squeeze(np.squeeze(inst_range, axis=1), axis=1)
         colours = [cmap[inst] for inst in inst_range]
 
-        annotated_image = annotate_instance(img[:, :, ::-1], colours[0], mask=one_hot[0])
-        for _i, _inst_mask in enumerate(one_hot[1:]):
-            annotated_image = annotate_instance(annotated_image, colours[_i + 1], mask=_inst_mask)
+        if len(one_hot) == 0:
+            annotated_image = img[:, :, ::-1]
+        else:
+            annotated_image = annotate_instance(img[:, :, ::-1], colours[0], mask=one_hot[0])
+            for _i, _inst_mask in enumerate(one_hot[1:]):
+                annotated_image = annotate_instance(annotated_image, colours[_i + 1], mask=_inst_mask)
 
         filepath = os.path.join(visualizations_dir, '{}.png'.format(f_img.split("/")[-1].split(".")[0]))
         cv2.imwrite(filepath, annotated_image)
@@ -222,7 +225,7 @@ if __name__ == '__main__':
         # if _i < 2208:
         #     continue
 
-        # if _video_id != '6ddf3ea493c83703a8aa12fcaa7c3aed':
+        # if _video_id != '00707bf19d5699042dd4d79e2ce066f1':
         #     continue
 
         if _video_id not in index:
